@@ -1,0 +1,105 @@
+/*---------------------------
+    Color Theme
+---------------------------*/
+// Primary color
+$white: #fff;
+$black: #252525;
+
+
+// Secondary colors
+$secondary: #fbaf5d;
+$light-grey: #a1a1a1;
+
+// Background Colour
+$body: #F2F2F3;
+$header: rgba(70,70,70, .8);
+
+
+/*---------------------------
+    Font
+---------------------------*/
+$font-main: 'Lato','Roboto';
+$font-heading: 'Dancing Script';
+$font-size: 62.5%; /* 10px */
+$line-height: 1.5;
+
+/*---------------------------
+    Grid System
+---------------------------*/
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.row {
+    position: relative;
+    margin: 0 auto;
+}
+
+.row .row {
+    width: auto;
+    margin: 0 -1.5em;
+}
+
+.columns,
+.column {
+    position: relative;
+    float: left;
+    padding: 0 1.5em; /* 15px --> 30px gutter between columns */
+}
+
+.row-center {
+    text-align: center;
+}
+
+.row-center > .columns {
+    display: inline-block;
+    letter-spacing: 0;
+    vertical-align: top;
+    float: none;
+}
+
+.row-center.va-middle > .columns {
+    vertical-align: middle;
+}
+
+.row-center.va-bottom > .columns {
+    vertical-align: bottom;
+}
+
+.row-center.va-middle > .columns {
+    vertical-align: middle;
+}
+
+.row-center.va-bottom > .columns {
+    vertical-align: bottom;
+}
+
+@for $i from 1 through 12 {
+    
+    .span-#{$i} {
+        width: (100% / 12) * $i
+    }
+    .push-#{$i} {
+        left: (100% / 12) * $i
+    }
+    .pull-#{$i} {
+        right: (100% / 12) * $i
+    }
+
+    .offset-#{$i} {
+        margin-left: (100% / 12) * $i
+    }
+}
+
+/*---------------------------
+    Border
+---------------------------*/
+$border-bottom: inset 0 -1px rgba(0,0,0,0.5);
+$border-bottom-white: inset 0 -1px rgba(255,255,255,0.5);
+$border-left: inset 1px 0px rgba(0,0,0,0.5);
