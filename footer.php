@@ -6,21 +6,33 @@
     }
 
 ?>
-<footer class="page-footer section">
+<footer class="page-footer">
     
     <div class="row">
         
-        <div class="span-4 columns">
+        <div class="span-3 columns">
             
-            <h5 class="page-footer-title">Follow Us</h5>
+            <h5 class="page-footer-title">Location</h5>
 
-            <ul class="social">
-            <?php  echo $socialHTML; ?>
-            </ul>
+            <p class="footer-cap">
+            Vancouver Institute of Media Arts 570 Dunsmuir Street, Suite 600 Vancouver, BC, Canada V6B 1Y1 
+            </p>
+            <p class="footer-cap">Phone: 604-682-2787</p>
 
         </div>
 
-        <div class="span-4 columns">
+        <div class="span-3 columns">
+            
+            <h5 class="page-footer-title">Hours</h5>
+
+            <p class="footer-cap">Monday - Saturday </p>
+            <p class="footer-cap">8 am - 9 pm</p>
+            <p class="footer-cap">Sunday</p>
+            <p class="footer-cap">10 am - 6 pm</p>
+
+        </div>
+
+        <div class="span-3 columns">
 
             <h5 class="page-footer-title">Site Maps</h5>
 
@@ -30,9 +42,13 @@
 
         </div>
 
-        <div class="span-4 columns">
+        <div class="span-3 columns">
             
-            <h5 class="page-footer-title">News Letter</h5>
+            <h5 class="page-footer-title">Follow Us</h5>
+
+            <ul class="social">
+            <?php  echo $socialHTML; ?>
+            </ul>
 
         </div>
 
