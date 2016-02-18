@@ -7,7 +7,7 @@ $config = array(
 
         'about' => array(
             'name' => 'about',
-            'href' => 'index.php'
+            'href' => 'about.php'
         ),
         'gallery' => array(
             'name' => 'gallery',
@@ -71,7 +71,7 @@ $config = array(
         array(
             'name' => 'kate young',
             'desc' => 'Master Stylist',
-            'img' => 'img/stylists/stylists_1.png',
+            'img' => 'img/stylists/home_stylists_1.png',
             'alt' => 'Image of Featured Stylist',
             'href' => '#'
         ),
@@ -79,7 +79,7 @@ $config = array(
         array(
             'name' => 'joseph cassell',
             'desc' => 'Senior Stylist',
-            'img' => 'img/stylists/stylists_2.png',
+            'img' => 'img/stylists/home_stylists_2.png',
             'alt' => 'Image of Featured Stylist',
             'href' => '#'
         ),
@@ -87,7 +87,7 @@ $config = array(
         array(
             'name' => 'jessica paster',
             'desc' => 'Senior Stylist',
-            'img' => 'img/stylists/stylists_3.png',
+            'img' => 'img/stylists/home_stylists_3.png',
             'alt' => 'Image of Featured Stylist',
             'href' => '#'
         ),
@@ -130,132 +130,127 @@ $config = array(
             'alt' => 'Image of Vancouver Harbour in Canada',
             'href' => 'img/galleries/gallery-modal/gallery-1.jpg',
             'class' => ''
-        ),
-
-        array(
-            'img' => 'img/galleries/gallery-list/gallery-2.jpg',
-            'alt' => 'Image of Vancouver Harbour in Canada',
-            'href' => 'img/galleries/gallery-modal/gallery-2.jpg',
-            'class' => ''
-        ),
-
-        array(
-            'img' => 'img/galleries/gallery-list/gallery-1.jpg',
-            'alt' => 'Image of Vancouver Harbour in Canada',
-            'href' => 'img/galleries/gallery-modal/gallery-1.jpg',
-            'class' => ''
-        ),
-
-        array(
-            'img' => 'img/tours/tour-1.jpg',
-            'alt' => 'Image of Vancouver Harbour in Canada',
-            'href' => 'img/tours/tour-1.jpg',
-            'class' => ''
-        ),
-
-        array(
-            'img' => 'img/galleries/gallery-list/gallery-1.jpg',
-            'alt' => 'Image of Vancouver Harbour in Canada',
-            'href' => 'img/galleries/gallery-modal/gallery-1.jpg',
-            'class' => ''
-        ),
-
-        array(
-            'img' => 'img/galleries/gallery-list/gallery-1.jpg',
-            'alt' => 'Image of Vancouver Harbour in Canada',
-            'href' => 'img/galleries/gallery-modal/gallery-1.jpg',
-            'class' => ''
-        ),
-
-        array(
-            'img' => 'img/galleries/gallery-list/gallery-2.jpg',
-            'alt' => 'Image of Vancouver Harbour in Canada',
-            'href' => 'img/galleries/gallery-modal/gallery-2.jpg',
-            'class' => ''
-        ),
-        array(
-            'img' => 'img/tours/tour-1.jpg',
-            'alt' => 'Image of Vancouver Harbour in Canada',
-            'href' => 'img/tours/tour-1.jpg',
-            'class' => ''
-        ),
-
-        array(
-            'img' => 'img/galleries/gallery-list/gallery-1.jpg',
-            'alt' => 'Image of Vancouver Harbour in Canada',
-            'href' => 'img/galleries/gallery-modal/gallery-1.jpg',
-            'class' => ''
-        ),
-
-        array(
-            'img' => 'img/galleries/gallery-list/gallery-1.jpg',
-            'alt' => 'Image of Vancouver Harbour in Canada',
-            'href' => 'img/galleries/gallery-modal/gallery-1.jpg',
-            'class' => ''
-        ),
-
-        array(
-            'img' => 'img/galleries/gallery-list/gallery-2.jpg',
-            'alt' => 'Image of Vancouver Harbour in Canada',
-            'href' => 'img/galleries/gallery-modal/gallery-2.jpg',
-            'class' => ''
-        ),
-        array(
-            'img' => 'img/tours/tour-1.jpg',
-            'alt' => 'Image of Vancouver Harbour in Canada',
-            'href' => 'img/tours/tour-1.jpg',
-            'class' => ''
-        ),
-
-        array(
-            'img' => 'img/galleries/gallery-list/gallery-2.jpg',
-            'alt' => 'Image of Vancouver Harbour in Canada',
-            'href' => 'img/galleries/gallery-modal/gallery-2.jpg',
-            'class' => ''
-        ),
-        array(
-            'img' => 'img/tours/tour-1.jpg',
-            'alt' => 'Image of Vancouver Harbour in Canada',
-            'href' => 'img/tours/tour-1.jpg',
-            'class' => ''
-        ),
-
-        array(
-            'img' => 'img/galleries/gallery-list/gallery-1.jpg',
-            'alt' => 'Image of Vancouver Harbour in Canada',
-            'href' => 'img/galleries/gallery-modal/gallery-1.jpg',
-            'class' => ''
-        ),
-
-        array(
-            'img' => 'img/galleries/gallery-list/gallery-1.jpg',
-            'alt' => 'Image of Vancouver Harbour in Canada',
-            'href' => 'img/galleries/gallery-modal/gallery-1.jpg',
-            'class' => ''
-        ),
+        )
     ),
 
-    // Testimonials
-    'testimonials' => array(
-        1 => array(
-            'img' => 'img/rockies.jpg',
-            'alt' => 'Image of Rockies in Canada',
-            'location' => 'Rockies',
-            'fee' => '$169'
+    // About
+    'about' => array(
+        'about_img' => 'img/stylists/about_img.jpg',
+        'about_img_alt' => 'Image of Yoshi',
+
+        'about_desc' => array(
+            'The Yoshi Hair Salon Studio is known as one of the best luxury hair salons in the LA. ',
+            
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec iaculis erat, vel cursus turpis. Vivamus eu finibus ante. Sed a nulla lacus. Nunc vel accumsan quam, a suscipit nisi. ',
+            
+            'Aliquam a aliquet eros, a sagittis eros. In blandit vestibulum molestie. Maecenas in efficitur dolor, in sollicitudin ipsum. Nunc nec dolor id turpis egestas hendrerit in eget ipsum. Nunc vitae magna bibendum, luctus leo id, molestie nunc. Etiam a suscipit massa. ',
+
+            'Vestibulum facilisis tortor quis vestibulum tristique. Integer porta congue dolor, faucibus aliquet velit ultricies in. Vestibulum elementum at odio vitae ultricies. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur et libero a mi sollicitudin egestas. '
         ),
 
-        2 => array(
-            'img' => 'img/rockies.jpg',
-            'alt' => 'Image of Rockies in Canada',
-            'location' => 'Vancouver Harbour',
-            'fee' => '$100'
-        ),
+        'stylists' => array(
+            array(
+                'name' => 'Patrick',
+                'desc' => 'Master Stylist',
+                'img' => 'img/stylists/stylists_1.jpg',
+                'alt' => 'Image of Yoshi\'s Stylist Patrick',
+                'href' => '#'
+            ),
+            array(
+                'name' => 'Patrick',
+                'desc' => 'Senior Stylist',
+                'img' => 'img/stylists/stylists_2.jpg',
+                'alt' => 'Image of Yoshi\'s Stylist Patrick',
+                'href' => '#'
+            ),
+            array(
+                'name' => 'Patrick',
+                'desc' => 'Master Stylist',
+                'img' => 'img/stylists/stylists_3.jpg',
+                'alt' => 'Image of Yoshi\'s Stylist Patrick',
+                'href' => '#'
+            ),
+            array(
+                'name' => 'Patrick',
+                'desc' => 'Master Stylist',
+                'img' => 'img/stylists/stylists_4.jpg',
+                'alt' => 'Image of Yoshi\'s Stylist Patrick',
+                'href' => '#'
+            ),
 
-        3 => array(
-            'img' => 'img/rockies.jpg',
-            'alt' => 'Image of Rockies in Canada',
-            'location' => 'Yellowknife',
-            'fee' => '$220'
+            array(
+                'name' => 'Patrick',
+                'desc' => 'Master Stylist',
+                'img' => 'img/stylists/stylists_1.jpg',
+                'alt' => 'Image of Yoshi\'s Stylist Patrick',
+                'href' => '#'
+            ),
+            array(
+                'name' => 'Patrick',
+                'desc' => 'Senior Stylist',
+                'img' => 'img/stylists/stylists_2.jpg',
+                'alt' => 'Image of Yoshi\'s Stylist Patrick',
+                'href' => '#'
+            ),
+            array(
+                'name' => 'Patrick',
+                'desc' => 'Master Stylist',
+                'img' => 'img/stylists/stylists_3.jpg',
+                'alt' => 'Image of Yoshi\'s Stylist Patrick',
+                'href' => '#'
+            ),
+            array(
+                'name' => 'Patrick',
+                'desc' => 'Master Stylist',
+                'img' => 'img/stylists/stylists_4.jpg',
+                'alt' => 'Image of Yoshi\'s Stylist Patrick',
+                'href' => '#'
+            ),
+
+        )
+    ),
+
+    // Gallery
+    'gallery' => array(
+
+        'lists' => array(
+
+            array(
+                'img' => 'img/galleries/gallery_lists/gallery_1.jpg',
+                'alt' => 'Image of Hair Style in 2016',
+                'href' => 'img/galleries/gallery-modal/gallery-1.jpg',
+                'class' => ''
+            ),
+            array(
+                'img' => 'img/galleries/gallery_lists/gallery_2.jpg',
+                'alt' => 'Image of Hair Style in 2016',
+                'href' => 'img/galleries/gallery-modal/gallery-1.jpg',
+                'class' => ''
+            ),
+                array(
+                'img' => 'img/galleries/gallery_lists/gallery_3.jpg',
+                'alt' => 'Image of Hair Style in 2016',
+                'href' => 'img/galleries/gallery-modal/gallery-1.jpg',
+                'class' => ''
+            ),
+            array(
+                'img' => 'img/galleries/gallery_lists/gallery_4.jpg',
+                'alt' => 'Image of Hair Style in 2016',
+                'href' => 'img/galleries/gallery-modal/gallery-1.jpg',
+                'class' => ''
+            ),
+            array(
+                'img' => 'img/galleries/gallery_lists/gallery_5.jpg',
+                'alt' => 'Image of Hair Style in 2016',
+                'href' => 'img/galleries/gallery-modal/gallery-1.jpg',
+                'class' => ''
+            ),
+            array(
+                'img' => 'img/galleries/gallery_lists/gallery_6.jpg',
+                'alt' => 'Image of Hair Style in 2016',
+                'href' => 'img/galleries/gallery-modal/gallery-1.jpg',
+                'class' => ''
+            )
         )
 
     )

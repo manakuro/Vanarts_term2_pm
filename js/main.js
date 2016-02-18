@@ -1,7 +1,7 @@
 $(function(){
 
     /*----------------------
-        Hero Section
+        Home / Hero Section
     ---------------------*/
     // Slider show
     var max = 4,
@@ -27,6 +27,30 @@ $(function(){
             
         }, 6000);
 
+    }
+
+    /*----------------------
+        Gallery
+    ---------------------*/
+    var fbox = $(".fbox");
+
+    if (fbox.length > 0) {
+        
+        fbox.fancybox({
+            // beforeLoad: function() {},
+            // beforeClose: function() {
+            //     console.log("beforeClose");
+            //     header.fadeIn("600");
+            // },
+            scrolling: "no",
+            helpers: {
+                overlay: {
+                    css: {
+                        "background" : "rgba(58, 42, 45, 0.8)"
+                    }
+                }
+            }
+        });   
     }
 
 });

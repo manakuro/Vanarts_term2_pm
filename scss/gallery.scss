@@ -1,0 +1,20 @@
+.section-gallery {
+
+    .section-gallery-li {
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .section-gallery-li-overlay {
+        @include overlay(757px);
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+}
+
+.gallery-modal {
+    width: 120em;
+}

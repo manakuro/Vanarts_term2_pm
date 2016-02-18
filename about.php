@@ -1,33 +1,49 @@
 <?php include "header.php"; ?>
-
-    <div class="hero section">
-        
-        <div class="hero-bg slider-show"></div>
-
-        <div class="hero-heading">
-
-            <p class="hero-heading-ca-title">New Hair Styles</p>
-            <p class="hero-heading-ca-title">for 2016</p>
-
-            <a href="./booking.php" class="hero-heading-ca btn">Schedule Now</a>                    
-
-        </div>
-
-    </div><!-- end of hero -->
     
     <main class="page-main">
 
-        <section class="section section-stylists">
-            
-            <h3 class="section-title">Top Stylists</h3>
+        <h3 class="page-title">About Us</h3>
 
+        <section class="section section-about">
+            
+            <div class="row">
+                
+                <div class="span-6 columns">
+
+                    <h4 class="about-title">Yoshi Hair Salon Studio</h4>
+
+                    <p class="about-desc">Since 2001</p>
+
+                <?php foreach($config['about']['about_desc'] as $val): ?>
+                    <p class="about-desc">
+                        <?php echo $val; ?>
+                    </p>
+                <?php endforeach; ?>
+
+                </div>
+
+                <div class="span-6 columns">
+                    <img src="<?php echo $config['about']['about_img']; ?>" alt="<?php echo $config['about']['about_img_alt']; ?>">
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="section section-about-stylists">
+            
             <div class="row">
 
-            <?php foreach($config['home_stylists'] as $val): ?>
-                <div class="span-4 columns section-stylists-li">
+            <div class="span-12 columns">
+                <h3 class="about-section-title">Stylists</h3>
+            </div>
+
+            <?php foreach($config['about']['stylists'] as $val): ?>
+                <div class="span-3 columns section-about-stylists-li">
                     <img src="<?php echo $val['img']; ?>" alt="<?php echo $val['alt']; ?>">
-                    <p class="section-stylists-title"><?php echo $val['name']?></p>
-                    <p class="section-stylists-desc"><?php echo $val['desc']?></p>
+                    <p class="section-about-stylists-title"><?php echo $val['name']?></p>
+                    <p class="section-about-stylists-desc"><?php echo $val['desc']?></p>
                 </div>
             <?php endforeach; ?>
 
@@ -37,9 +53,11 @@
 
         <section class="section section-testimonials">
             
-            <h3 class="section-title">Testimonials</h3>
-
             <div class="row">
+
+            <div class="span-12 columns">
+                <h3 class="about-section-title">Testimonials</h3>
+            </div>
 
             <?php foreach($config['home_testimonials'] as $val): ?>
                 <div class="span-4 columns section-testimonials-li">

@@ -1,0 +1,35 @@
+.about-section-title {
+    @include section-title(left);
+}
+
+.section-about {
+    margin-top: 80px;
+
+    .about-title {
+        font-size: 3em;
+    }
+
+    .about-desc {
+        font-size: 2em;
+        margin-top: 30px;
+    }
+}
+
+.section-about-stylists {
+
+    .section-about-stylists-li {
+        text-align: center;
+        margin-top: 30px;
+
+        .section-about-stylists-title {
+            font-size: 3em;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+
+        .section-about-stylists-desc {
+            font-size: 2em;
+        }
+
+    }
+}
