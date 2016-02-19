@@ -3,7 +3,7 @@ $(function(){
     /*----------------------
         Home / Hero Section
     ---------------------*/
-    // Slider show
+    // Slide show
     var max = 4,
         num = 1,
         sliderShow = $('.slider-show');
@@ -52,5 +52,46 @@ $(function(){
             }
         });   
     }
+
+    /*----------------------
+        Services
+    ---------------------*/
+    var servicesNavLists = $(".section-services-nav-lists");
+
+    if (servicesNavLists.length > 0) {
+
+        var pageTitleHeight = $(".page-title").height(),
+            sevicesLists = $(".section-services-lists");
+
+        $(window).scroll(function(event) {
+            
+            var topWindow = $(window).scrollTop(),
+                sectionListsTop = sevicesLists.offset().top + pageTitleHeight - 80;
+
+            if (topWindow >= sectionListsTop) {
+
+                sevicesLists.addClass('push-5');
+                servicesNavLists.addClass('section-services-nav-fixed');
+
+            } else if (topWindow < sectionListsTop) {
+
+                sevicesLists.removeClass('push-5');
+                servicesNavLists.removeClass('section-services-nav-fixed');
+            }
+
+        });
+
+        // Scrolling Event
+        $(".section-services-link").click(function() {
+
+            var serviceListId = $(this).attr('href'),
+                top = $(serviceListId).offset().top;
+
+            $("html,body").animate({
+                scrollTop: top
+            }, 1000);
+        });
+
+    }    
 
 });

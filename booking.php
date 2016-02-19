@@ -21,7 +21,7 @@
                                 <div class="input-wrapper">
                                     <span class="label-span">Name</span>
                                     <input class="input" type="text" value="" name="name">
-                                </div
+                                </div>
                             </li>
 
                             <li>

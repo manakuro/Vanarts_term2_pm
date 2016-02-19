@@ -393,6 +393,195 @@ $config = array(
                 'text' => '18:00 - 20:00'
             )
         )
+    ),
+
+    // Services
+    'services' => array(
+
+        'nav_lists' => array(
+
+            array(
+                'href' => 'hair_cut',
+                'text' => 'Hair Cuts'
+            ),
+            array(
+                'href' => 'color',
+                'text' => 'Color'
+            ),
+            array(
+                'href' => 'perms',
+                'text' => 'Perms'
+            ),
+            array(
+                'href' => 'reatment',
+                'text' => 'Treatments'
+            ),
+            array(
+                'href' => 'make-up',
+                'text' => 'Make Up'
+            ),
+            array(
+                'href' => 'extensions',
+                'text' => 'Extensions / Smoothig'
+            ),
+
+        ),
+
+        'lists' => array(
+
+            array(
+                'title' => 'Hair Cuts',
+                'items' => array(
+                    array(
+                        'text' => 'Stylist 65 - 75'
+                    ),
+                    array(
+                        'text' => 'Senior Stylist 75 – 100'
+                    ),
+                    array(
+                        'text' => 'Master Stylist 100 – 250'
+                    ),
+                ),
+
+                'img' => 'img/services/hair_cuts.jpg',
+                'alt' => 'Image of Hair Cut Model',
+
+            ),
+
+            array(
+                'title' => 'Color',
+                'items' => array(
+                    array(
+                        'text' => 'Color Glazing 40'
+                    ),
+                    array(
+                        'text' => 'Corrective Color Priced upon Consultation'
+                    ),
+                    array(
+                        'text' => 'Single Process 45'
+                    ),
+                    array(
+                        'text' => 'Partial Foil 80'
+                    ),
+                    array(
+                        'text' => 'Full Foil 105'
+                    ),
+                    array(
+                        'text' => 'Ombre 165'
+                    ),
+                    array(
+                        'text' => 'Balayage 90'
+                    )
+                ),
+
+                'img' => 'img/services/color.jpg',
+                'alt' => 'Image of Hair Color Model',
+
+            ),
+
+            array(
+                'title' => 'Perm',
+                'items' => array(
+                    array(
+                        'text' => 'Full Perm 70 - 90'
+                    ),
+                    array(
+                        'text' => 'Partial Perm 65 - 75'
+                    ),
+                    array(
+                        'text' => 'Long Hair Wavy 90 - 120'
+                    ),
+                    array(
+                        'text' => 'Long Hair Spiral 110 - 140'
+                    ),
+                    array(
+                        'text' => '﻿Chemical Straight 80 - 110'
+                    )
+                ),
+
+                'img' => 'img/services/perm.jpg',
+                'alt' => 'Image of Perm Cut Model',
+
+            ),
+
+            array(
+                'title' => 'Treatments',
+                'items' => array(
+                    array(
+                        'text' => 'Full Perm 70 - 90'
+                    ),
+                    array(
+                        'text' => 'Partial Perm 65 - 75'
+                    ),
+                    array(
+                        'text' => 'Long Hair Wavy 90 - 120'
+                    ),
+                    array(
+                        'text' => 'Long Hair Spiral 110 - 140'
+                    ),
+                    array(
+                        'text' => '﻿Chemical Straight 80 - 110'
+                    )
+                ),
+
+                'img' => 'img/services/perm.jpg',
+                'alt' => 'Image of Perm Cut Model',
+
+            ),
+
+            array(
+                'title' => 'Make Up',
+                'items' => array(
+                    array(
+                        'text' => 'Full Perm 70 - 90'
+                    ),
+                    array(
+                        'text' => 'Partial Perm 65 - 75'
+                    ),
+                    array(
+                        'text' => 'Long Hair Wavy 90 - 120'
+                    ),
+                    array(
+                        'text' => 'Long Hair Spiral 110 - 140'
+                    ),
+                    array(
+                        'text' => '﻿Chemical Straight 80 - 110'
+                    )
+                ),
+
+                'img' => 'img/services/perm.jpg',
+                'alt' => 'Image of Perm Cut Model',
+
+            ),
+
+            array(
+                'title' => 'Extensions / Smoothig',
+                'items' => array(
+                    array(
+                        'text' => 'Full Perm 70 - 90'
+                    ),
+                    array(
+                        'text' => 'Partial Perm 65 - 75'
+                    ),
+                    array(
+                        'text' => 'Long Hair Wavy 90 - 120'
+                    ),
+                    array(
+                        'text' => 'Long Hair Spiral 110 - 140'
+                    ),
+                    array(
+                        'text' => '﻿Chemical Straight 80 - 110'
+                    )
+                ),
+
+                'img' => 'img/services/perm.jpg',
+                'alt' => 'Image of Perm Cut Model',
+
+            ),
+
+        )
+
+
     )
 
 
