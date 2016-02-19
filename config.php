@@ -253,6 +253,146 @@ $config = array(
             )
         )
 
+    ),
+
+    // Booking
+    'booking' => array(
+
+        'services' => array(
+
+            'hair_cut' => array(
+                'text' => 'Hair Cut',
+                'options' => array(
+                    array(
+                    'val' => 'hair_cut',
+                    'text' => 'Hair Cut'
+                    )
+                )
+            ),
+            'color' => array(
+
+                'text' => 'Colour',
+
+                'options' => array(
+
+                    array(
+                        'val' => 'color_1',
+                        'text' => 'Color Glazing'
+                    ),
+                    array(
+                        'val' => 'color_2',
+                        'text' => 'Corrective Color Priced upon Consultation'
+                    ),
+                    array(
+                        'val' => 'color_3',
+                        'text' => 'Single Process'
+                    ),
+                    array(
+                        'val' => 'color_4',
+                        'text' => 'Partial Foil'
+                    ),
+                    array(
+                        'val' => 'color_5',
+                        'text' => 'Full Foil'
+                    ),
+                    array(
+                        'val' => 'color_6',
+                        'text' => 'Ombre'
+                    ),
+                    array(
+                        'val' => 'color_7',
+                        'text' => 'Balayage'
+                    )
+
+                )
+
+            ),
+
+            'perm' => array(
+
+                'text' => 'Perm',
+
+                'options' => array(
+
+                    array(
+                        'val' => 'perm_1',
+                        'text' => 'Full Perm '
+                    ),
+                    array(
+                        'val' => 'perm_2',
+                        'text' => 'Partial Perm'
+                    ),
+                    array(
+                        'val' => 'perm_3',
+                        'text' => 'Long Hair Wavy '
+                    ),
+                    array(
+                        'val' => 'perm_4',
+                        'text' => 'Long Hair Spiral'
+                    ),
+                    array(
+                        'val' => 'perm_5',
+                        'text' => '﻿Chemical Straight'
+                    )
+
+                )
+            )
+
+        ),
+
+        'staff_preferences' => array(
+            array(
+                'val' => 'staff_1',
+                'text' => 'Patrick'
+            ),
+            array(
+                'val' => 'staff_2',
+                'text' => 'Joseph Cassell'
+            ),
+            array(
+                'val' => 'staff_3',
+                'text' => 'Jessica Paster'
+            ),
+            array(
+                'val' => 'staff_4',
+                'text' => 'Kate young'
+            ),
+            array(
+                'val' => 'staff_5',
+                'text' => 'Patrick'
+            ),
+            array(
+                'val' => 'staff_6',
+                'text' => 'Patrick'
+            ),
+        ),
+
+        'time' => array(
+            array(
+                'val' => 'time_1',
+                'text' => '8:00 - 10:00'
+            ),
+            array(
+                'val' => 'time_2',
+                'text' => '10:00 - 12:00'
+            ),
+            array(
+                'val' => 'time_3',
+                'text' => '12:00 - 14:00'
+            ),
+            array(
+                'val' => 'time_4',
+                'text' => '14:00 - 16:00'
+            ),
+            array(
+                'val' => 'time_5',
+                'text' => '16:00 - 18:00'
+            ),
+            array(
+                'val' => 'time_6',
+                'text' => '18:00 - 20:00'
+            )
+        )
     )
 
 
