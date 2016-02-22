@@ -2,51 +2,37 @@
     
     <main class="page-main">
 
-        <h3 class="page-title">Services</h3>
+        <h3 class="page-title">Trendy Watch</h3>
 
-        <section class="section section-services">
+        <section class="section section-trendy-watch">
             
-            <div class="row">
+            <!-- <div class="row"> -->
 
-                <div class="span-5 columns">
-                    <ul class="section-services-nav-lists">
-                    <?php
-                        $navListsHref = array();
-                    ?>
-                    <?php foreach($config['services']['nav_lists'] as $key => $val): ?>
-                        <?php 
-                            $navListsHref[$key] = $val['href'];
-                        ?>
-
-                        <li class="services-nav-li">
-                            <a class="section-services-link" href="#<?php echo $val['href']; ?>"><?php echo $val['text']; ?></a>
-                        </li>
-
-                    <?php endforeach; ?>
-                    </ul>
-                </div>
-
-                <div class="span-7 columns section-services-lists">
+                <div class="section-trendy-watch-container">
                     
-                    <?php foreach($config['services']['lists'] as $key => $val): ?>
+                    <?php foreach($config['trendy_watch']['lists'] as $key => $val): ?>
 
-                        <div class="section-services-li" id="<?php echo $navListsHref[$key]; ?>">
+                        <div class="span-3 columns section-trendy-watch-li">
                             
-                            <h4 class="section-services-li-title"><?php echo $val['title']; ?></h4>
+                            <a href="<?php echo $val['href']; ?>">
+                                
+                                <img src="<?php echo $val['img']; ?>" alt="<?php echo $val['alt']; ?>">
 
-                            <?php foreach($val['items'] as $item): ?>
-                            <p class="section-services-item"><?php echo $item['text']; ?></p>
-                            <?php endforeach; ?>
+                                <div class="section-trendy-watch-desc-inner">
+                                    <h5 class="section-trendy-watch-title"><?php echo $val['title']; ?></h5>
+                                    <p class="section-trendy-watch-date"><?php echo $val['date']; ?></p>
+                                    <p class="section-trendy-watch-desc"><?php echo $val['desc']; ?></p>
+                                </div>
 
-                            <img src="<?php echo $val['img']; ?>" alt="<?php echo $val['alt']; ?>">
+                            </a>
 
                         </div>
 
                     <?php endforeach; ?>
-                    
+
                 </div>
 
-            </div>
+            <!-- </div> -->
 
         </section><!-- end of section-services -->
 

@@ -580,7 +580,78 @@ $config = array(
             ),
 
         )
+    ),
 
+
+    // Trendy Watch
+    'trendy_watch' => array(
+
+        'lists' => array(
+            array(
+                'title' => 'Trendy',
+                'date' => 'Jan 16 2016',
+                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing',
+                'href' => '#',
+                'img' => 'img/trendy_watch/trendy_1.jpg',
+                'alt' => 'Image of Trendy Watch'
+            ),
+            array(
+                'title' => 'Trendy',
+                'date' => 'Jan 16 2016',
+                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing',
+                'href' => '#',
+                'img' => 'img/trendy_watch/trendy_2.jpg',
+                'alt' => 'Image of Trendy Watch'
+            ),
+            array(
+                'title' => 'Trendy',
+                'date' => 'Jan 16 2016',
+                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing',
+                'href' => '#',
+                'img' => 'img/trendy_watch/trendy_3.jpg',
+                'alt' => 'Image of Trendy Watch'
+            ),
+            array(
+                'title' => 'Trendy',
+                'date' => 'Jan 16 2016',
+                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing',
+                'href' => '#',
+                'img' => 'img/trendy_watch/trendy_5.jpg',
+                'alt' => 'Image of Trendy Watch'
+            ),
+            array(
+                'title' => 'Trendy',
+                'date' => 'Jan 16 2016',
+                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing',
+                'href' => '#',
+                'img' => 'img/trendy_watch/trendy_6.jpg',
+                'alt' => 'Image of Trendy Watch'
+            ),
+            array(
+                'title' => 'Trendy',
+                'date' => 'Jan 16 2016',
+                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing',
+                'href' => '#',
+                'img' => 'img/trendy_watch/trendy_7.jpg',
+                'alt' => 'Image of Trendy Watch'
+            ),
+            array(
+                'title' => 'Trendy',
+                'date' => 'Jan 16 2016',
+                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing',
+                'href' => '#',
+                'img' => 'img/trendy_watch/trendy_8.jpg',
+                'alt' => 'Image of Trendy Watch'
+            ),
+            array(
+                'title' => 'Trendy',
+                'date' => 'Jan 16 2016',
+                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing',
+                'href' => '#',
+                'img' => 'img/trendy_watch/trendy_3.jpg',
+                'alt' => 'Image of Trendy Watch'
+            )
+        )
 
     )
 

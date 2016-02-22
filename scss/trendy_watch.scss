@@ -1,0 +1,36 @@
+.section-trendy-watch {
+    position: relative;
+    width: 1500px;
+    margin: 0 auto;
+
+    .section-trendy-watch-container {
+        min-height: 100vh;
+    }
+    
+    .section-trendy-watch-li {
+        margin-bottom: 30px;
+
+        .section-trendy-watch-desc-inner {
+            background: $black;
+            color: $light-grey;
+            text-align: center;
+            padding: 15px;
+
+            .section-trendy-watch-title {
+                font-size: 2.5em;
+                margin-bottom: 10px;
+            }
+
+            .section-trendy-watch-date {
+                font-size: 2em;
+            }
+
+            .section-trendy-watch-desc {
+                font-size: 2em;
+            }
+
+        }
+
+    }
+
+}

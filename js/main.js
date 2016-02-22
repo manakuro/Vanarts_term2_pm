@@ -94,4 +94,27 @@ $(function(){
 
     }    
 
+    /*----------------------
+        Trendy Watch
+    ---------------------*/
+
+    // The Wookmark jQuery plugin is used to display trendy watch lists
+    // For more information check the website (http://www.wookmark.com/jquery-plugin)
+    var trendyWatchContainer = $(".section-trendy-watch-container");
+    if (trendyWatchContainer.length > 0) {
+        
+        trendyWatchContainer.wookmark({
+            align: "center",
+            // container: $("body"),
+            // autoResize: true,
+            itemWidth: "20%",
+            // fillEmptySpace: true
+            flexibleWidth: "20%",
+            // offset: 5,
+            // verticalOffset: 4
+        });
+
+
+    }
+
 });

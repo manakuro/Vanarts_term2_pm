@@ -56,7 +56,8 @@
 
 </footer>
 
-        <!-- JavaScript -->    
+        <!-- JavaScript -->
+        <script src="js/vendor/wookmark.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
