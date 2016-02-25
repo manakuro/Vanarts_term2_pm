@@ -1,8 +1,6 @@
 <?php include "header.php"; ?>
 
     <div class="hero section">
-        
-        <div class="hero-bg slider-show"></div>
 
         <div class="hero-heading">
 
@@ -12,6 +10,10 @@
             <a href="./booking.php" class="hero-heading-ca btn">Schedule Now</a>                    
 
         </div>
+
+        <?php foreach($config['hero_images'] as $key => $val): ?>
+        <div class="hero-bg slider-show" style="<?php echo $val['style']; ?>" data-image_index="image_<?php echo $key; ?>"></div>
+        <?php endforeach; ?>
 
     </div><!-- end of hero -->
     

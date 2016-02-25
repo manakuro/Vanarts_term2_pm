@@ -4,28 +4,46 @@ $(function(){
         Home / Hero Section
     ---------------------*/
     // Slide show
-    var max = 4,
-        num = 1,
-        sliderShow = $('.slider-show');
+    var sliderShow = $('.slider-show'),
+        max = sliderShow.length,
+        current = 0,
+        prev;
     
     if (sliderShow.length > 0) {
 
-        sliderShow.css({ 'background-image': 'url(img/hero/hero-img-' + num + '.jpg)' });
-        num += 1;
+        sliderShow.eq(current).css("opacity", 1);
+        current += 1;
         setInterval(function(){
-            
-            sliderShow
-                .fadeOut(3000, function(){
-                    if (num > max) num = 1;
-                    $(this).css({
-                        'background-image': 'url(img/hero/hero-img-' + num + '.jpg)'
-                    });
-                })
-                .fadeIn(3000, function(){
-                    num++;
+
+            if (current > max - 1) {
+                current = 0;
+                prev = max - 1;
+                
+            } else {
+                prev = current - 1;
+            }
+
+            var self = sliderShow.eq(current);
+
+            sliderShow.eq(prev)
+                .animate({
+                    opacity: 0.5
+                }, 2000);
+
+            sliderShow.eq(current)
+                .animate({
+                    opacity: 1
+                }, 2000, function(){ 
+                    
+                    // sliderShow.not(self).css("opacity", 0);
+                    sliderShow.eq(prev).animate({
+                        opacity: 0
+                    }, 1000);
+                    sliderShow.not(self).css("opacity", 0);
+                    current++;
                 });
             
-        }, 6000);
+        }, 4000);
 
     }
 
@@ -82,8 +100,8 @@ $(function(){
         });
 
         // Scrolling Event
-        $(".section-services-link").click(function() {
-
+        $(".section-services-link").click(function(e) {
+            e.preventDefault();
             var serviceListId = $(this).attr('href'),
                 top = $(serviceListId).offset().top;
 

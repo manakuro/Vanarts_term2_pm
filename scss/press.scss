@@ -1,0 +1,21 @@
+.section-press {
+
+    .section-press-li {
+        margin-bottom: 30px;
+        
+
+        .section-press-li-heading {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .section-press-li-divider {
+            width: 100%;
+            height: 2px;
+            padding: 20px;
+            box-shadow: inset 0 -1px $light-grey;
+        }
+    }
+
+}

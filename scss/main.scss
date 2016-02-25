@@ -64,7 +64,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        // background: url('../img/hero/hero-img-1.jpg');
+        opacity: 0;
         background-repeat: no-repeat;
         background-position: 30%;
         background-size: cover;
@@ -78,6 +78,7 @@
         text-align: center;
         background: rgba(255, 255, 255, .5);
         padding: 20px;
+        z-index: 100;
 
         .hero-heading-ca-title {
             font-size: 7em;
@@ -239,6 +240,9 @@
 
 /* Trendy Watch */
 @import 'trendy_watch.scss';
+
+/* Trendy Watch */
+@import 'press.scss';
 
 /* Contact */
 @import 'contact.scss';

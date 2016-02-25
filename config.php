@@ -65,6 +65,24 @@ $config = array(
 
     ),
 
+    // Home / Hero
+    'hero_images' => array(
+
+        array(
+            'style' => 'background-image: url(img/hero/hero-img-1.jpg);'
+        ),
+        array(
+            'style' => 'background-image: url(img/hero/hero-img-2.jpg);'
+        ),
+        array(
+            'style' => 'background-image: url(img/hero/hero-img-3.jpg);'
+        ),
+        array(
+            'style' => 'background-image: url(img/hero/hero-img-4.jpg);'
+        )
+
+    ),
+
     // Home / Stylists
     'home_stylists' => array(
 
@@ -651,6 +669,46 @@ $config = array(
                 'img' => 'img/trendy_watch/trendy_3.jpg',
                 'alt' => 'Image of Trendy Watch'
             )
+        )
+
+    ),
+
+    // Press
+    'press' => array(
+
+        'lists' => array(
+
+            array(
+                'heading' => 'Hair - Feb 2016',
+                'img' => 'img/press/trendy_1.jpg',
+                'alt' => 'Image of Hair magazine cover Feburary in 2016'
+            ),
+            array(
+                'heading' => 'Pro Hair & Beauty - Feb 2016',
+                'img' => 'img/press/trendy_2.jpg',
+                'alt' => 'Image of Pro Hair & Beauty magazine cover Feburary in 2016'
+            ),
+            array(
+                'heading' => 'Braids - Jan 2016',
+                'img' => 'img/press/trendy_3.jpg',
+                'alt' => 'Image of Braids magazine cover Jan in 2016'
+            ),
+            array(
+                'heading' => 'Blonde Hair - Dec 2015',
+                'img' => 'img/press/trendy_4.jpg',
+                'alt' => 'Image of Blonde Hair magazine cover December in 2015'
+            ),
+            array(
+                'heading' => 'Your Hair - Dec 2015',
+                'img' => 'img/press/trendy_5.jpg',
+                'alt' => 'Image of Your Hair magazine cover December in 2015'
+            ),
+            array(
+                'heading' => 'Vogue - Nov 2015',
+                'img' => 'img/press/trendy_6.jpg',
+                'alt' => 'Image of Vogue magazine cover November in 2015'
+            )
+
         )
 
     )
