@@ -1,31 +1,31 @@
-.section-trendy-watch {
+.section-trend-watch {
     position: relative;
     width: 1500px;
     margin: 0 auto;
 
-    .section-trendy-watch-container {
+    .section-trend-watch-container {
         min-height: 100vh;
     }
     
-    .section-trendy-watch-li {
+    .section-trend-watch-li {
         margin-bottom: 30px;
 
-        .section-trendy-watch-desc-inner {
+        .section-trend-watch-desc-inner {
             background: $black;
             color: $light-grey;
             text-align: center;
             padding: 15px;
 
-            .section-trendy-watch-title {
+            .section-trend-watch-title {
                 font-size: 2.5em;
                 margin-bottom: 10px;
             }
 
-            .section-trendy-watch-date {
+            .section-trend-watch-date {
                 font-size: 2em;
             }
 
-            .section-trendy-watch-desc {
+            .section-trend-watch-desc {
                 font-size: 2em;
             }
 

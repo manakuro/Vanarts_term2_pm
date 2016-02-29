@@ -25,11 +25,10 @@
 
         li {
             display: inline-block;
-            padding: 10px;
 
             a {
                 display: block;
-                padding: 5px;
+                padding: 15px;
                 font-size: 2em;
                 font-weight: 300;
                 text-transform: uppercase;
@@ -73,7 +72,7 @@
 
     .hero-heading {
         position: absolute;
-        top: 50%;
+        top: 30%;
         right: 3%;
         text-align: center;
         background: rgba(255, 255, 255, .5);
@@ -118,11 +117,16 @@
 /* Testimonials */
 .section-testimonials {
 
+    .section-testimonials-wrapper {
+        padding: 0 15px;
+    }
+
     .section-testimonials-li {
         position: relative;
+        padding: 0;
 
         .section-testimonials-li-overlay {
-            @include overlay(541px);
+            @include overlay(569px);
 
             &:hover {
                 opacity: .8;
@@ -238,10 +242,10 @@
 /* Services */
 @import 'services.scss';
 
-/* Trendy Watch */
-@import 'trendy_watch.scss';
+/* Trend Watch */
+@import 'trend_watch.scss';
 
-/* Trendy Watch */
+/* Trend Watch */
 @import 'press.scss';
 
 /* Contact */

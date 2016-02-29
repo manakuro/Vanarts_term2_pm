@@ -8,35 +8,29 @@
             
             <div class="row">
 
-            <?php foreach($config['gallery']['lists'] as $key => $val): ?>
-                <?php
-                    $id =  'gallery_'.$key;
-                ?>
-                <div class="span-6 columns section-gallery-li">
-                    <a href="#<?php echo $id; ?>" class="fbox" data-fancybox-group="group">
+                <div class="section-gallery--lists-wrapper cf">
+                    
+                <?php foreach($config['gallery']['lists'] as $key => $val): ?>
+
+                    <div class="span-6 columns section-gallery-li">
                         <img src="<?php echo $val['img']; ?>" alt="<?php echo $val['alt']; ?>">
                         <div class="section-gallery-li-overlay"></div>
-                    </a>
-                </div>
-
-                <div id="<?php echo $id; ?>" style="display:none;" class="gallery-modal">
-
-                    <div class="row">
-                    
-                        <div class="span-6 columns">
-                            <img src="<?php echo $val['img']; ?>" alt="<?php echo $val['alt']; ?>">
-                        </div>
-                        <div class="span-6 columns">
-                            <img src="<?php echo $val['img']; ?>" alt="<?php echo $val['alt']; ?>">
-                        </div>
-
                     </div>
 
+                <?php endforeach; ?>
+
                 </div>
-            <?php endforeach; ?>
 
             </div>
 
+            <div class="row row-center">
+                
+                <div class="span-6 columns">
+                    <a href="./booking.php" class="section-gallery-cta btn">Schedule Now</a>
+                </div>
+
+            </div>
+            
         </section><!-- end of section-testimonials -->
 
     </main><!-- end of page-main -->

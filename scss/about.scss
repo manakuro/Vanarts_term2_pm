@@ -1,5 +1,6 @@
 .about-section-title {
     @include section-title(left);
+    font-size: 6em;
 }
 
 .section-about {
@@ -12,6 +13,10 @@
     .about-desc {
         font-size: 2em;
         margin-top: 30px;
+
+        &:first-child {
+            margin-top: 0;
+        }
     }
 }
 

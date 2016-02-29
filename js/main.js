@@ -50,26 +50,6 @@ $(function(){
     /*----------------------
         Gallery
     ---------------------*/
-    var fbox = $(".fbox");
-
-    if (fbox.length > 0) {
-        
-        fbox.fancybox({
-            // beforeLoad: function() {},
-            // beforeClose: function() {
-            //     console.log("beforeClose");
-            //     header.fadeIn("600");
-            // },
-            scrolling: "no",
-            helpers: {
-                overlay: {
-                    css: {
-                        "background" : "rgba(58, 42, 45, 0.8)"
-                    }
-                }
-            }
-        });   
-    }
 
     /*----------------------
         Services
@@ -113,15 +93,15 @@ $(function(){
     }    
 
     /*----------------------
-        Trendy Watch
+        Trend Watch
     ---------------------*/
 
-    // The Wookmark jQuery plugin is used to display trendy watch lists
+    // The Wookmark jQuery plugin is used to display trend watch lists
     // For more information check the website (http://www.wookmark.com/jquery-plugin)
-    var trendyWatchContainer = $(".section-trendy-watch-container");
-    if (trendyWatchContainer.length > 0) {
+    var trendWatchContainer = $(".section-trend-watch-container");
+    if (trendWatchContainer.length > 0) {
         
-        trendyWatchContainer.wookmark({
+        trendWatchContainer.wookmark({
             align: "center",
             // container: $("body"),
             // autoResize: true,

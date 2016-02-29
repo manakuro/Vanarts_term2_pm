@@ -10,8 +10,6 @@
                 
                 <div class="span-6 columns">
 
-                    <h4 class="about-title">Yoshi Hair Salon Studio</h4>
-
                     <p class="about-desc">Since 2001</p>
 
                 <?php foreach($config['about']['about_desc'] as $val): ?>
@@ -55,18 +53,21 @@
             
             <div class="row">
 
-            <div class="span-12 columns">
-                <h3 class="about-section-title">Testimonials</h3>
-            </div>
-
-            <?php foreach($config['home_testimonials'] as $val): ?>
-                <div class="span-4 columns section-testimonials-li">
-                    <img src="<?php echo $val['img']; ?>" alt="<?php echo $val['alt']; ?>">
-                    <div class="section-testimonials-li-overlay">
-                        <p class="section-testimonials-li-desc"><?php echo $val['desc']; ?></p>
-                    </div>
+                <div class="span-12 columns">
+                    <h3 class="about-section-title">Testimonials</h3>
                 </div>
-            <?php endforeach; ?>
+
+                <div class="section-testimonials-wrapper cf">
+
+                    <?php foreach($config['home_testimonials'] as $val): ?>
+                        <div class="span-4 columns section-testimonials-li">
+                            <img src="<?php echo $val['img']; ?>" alt="<?php echo $val['alt']; ?>">
+                            <div class="section-testimonials-li-overlay">
+                                <p class="section-testimonials-li-desc"><?php echo $val['desc']; ?></p>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
 
             </div>
 

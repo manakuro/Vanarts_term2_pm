@@ -43,14 +43,18 @@
 
             <div class="row">
 
-            <?php foreach($config['home_testimonials'] as $val): ?>
-                <div class="span-4 columns section-testimonials-li">
-                    <img src="<?php echo $val['img']; ?>" alt="<?php echo $val['alt']; ?>">
-                    <div class="section-testimonials-li-overlay">
-                        <p class="section-testimonials-li-desc"><?php echo $val['desc']; ?></p>
+                <div class="section-testimonials-wrapper cf">
+                    
+                <?php foreach($config['home_testimonials'] as $val): ?>
+                    <div class="span-4 columns section-testimonials-li">
+                        <img src="<?php echo $val['img']; ?>" alt="<?php echo $val['alt']; ?>">
+                        <div class="section-testimonials-li-overlay">
+                            <p class="section-testimonials-li-desc"><?php echo $val['desc']; ?></p>
+                        </div>
                     </div>
+                <?php endforeach; ?>
+
                 </div>
-            <?php endforeach; ?>
 
             </div>
 

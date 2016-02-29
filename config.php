@@ -17,9 +17,9 @@ $config = array(
             'name' => 'services',
             'href' => 'services.php'
         ),
-        'trendy_watch' => array(
-            'name' => 'trendy watch',
-            'href' => 'trendy_watch.php'
+        'trend_watch' => array(
+            'name' => 'trend watch',
+            'href' => 'trend_watch.php'
         ),
         'press' => array(
             'name' => 'press',
@@ -601,73 +601,73 @@ $config = array(
     ),
 
 
-    // Trendy Watch
-    'trendy_watch' => array(
+    // Trend Watch
+    'trend_watch' => array(
 
         'lists' => array(
             array(
-                'title' => 'Trendy',
+                'title' => 'Trend',
                 'date' => 'Jan 16 2016',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing',
                 'href' => '#',
-                'img' => 'img/trendy_watch/trendy_1.jpg',
-                'alt' => 'Image of Trendy Watch'
+                'img' => 'img/trend_watch/trend_1.jpg',
+                'alt' => 'Image of Trend Watch'
             ),
             array(
-                'title' => 'Trendy',
+                'title' => 'Trend',
                 'date' => 'Jan 16 2016',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing',
                 'href' => '#',
-                'img' => 'img/trendy_watch/trendy_2.jpg',
-                'alt' => 'Image of Trendy Watch'
+                'img' => 'img/trend_watch/trend_2.jpg',
+                'alt' => 'Image of Trend Watch'
             ),
             array(
-                'title' => 'Trendy',
+                'title' => 'Trend',
                 'date' => 'Jan 16 2016',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing',
                 'href' => '#',
-                'img' => 'img/trendy_watch/trendy_3.jpg',
-                'alt' => 'Image of Trendy Watch'
+                'img' => 'img/trend_watch/trend_3.jpg',
+                'alt' => 'Image of Trend Watch'
             ),
             array(
-                'title' => 'Trendy',
+                'title' => 'Trend',
                 'date' => 'Jan 16 2016',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing',
                 'href' => '#',
-                'img' => 'img/trendy_watch/trendy_5.jpg',
-                'alt' => 'Image of Trendy Watch'
+                'img' => 'img/trend_watch/trend_5.jpg',
+                'alt' => 'Image of Trend Watch'
             ),
             array(
-                'title' => 'Trendy',
+                'title' => 'Trend',
                 'date' => 'Jan 16 2016',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing',
                 'href' => '#',
-                'img' => 'img/trendy_watch/trendy_6.jpg',
-                'alt' => 'Image of Trendy Watch'
+                'img' => 'img/trend_watch/trend_6.jpg',
+                'alt' => 'Image of Trend Watch'
             ),
             array(
-                'title' => 'Trendy',
+                'title' => 'Trend',
                 'date' => 'Jan 16 2016',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing',
                 'href' => '#',
-                'img' => 'img/trendy_watch/trendy_7.jpg',
-                'alt' => 'Image of Trendy Watch'
+                'img' => 'img/trend_watch/trend_7.jpg',
+                'alt' => 'Image of Trend Watch'
             ),
             array(
-                'title' => 'Trendy',
+                'title' => 'Trend',
                 'date' => 'Jan 16 2016',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing',
                 'href' => '#',
-                'img' => 'img/trendy_watch/trendy_8.jpg',
-                'alt' => 'Image of Trendy Watch'
+                'img' => 'img/trend_watch/trend_8.jpg',
+                'alt' => 'Image of Trend Watch'
             ),
             array(
-                'title' => 'Trendy',
+                'title' => 'Trend',
                 'date' => 'Jan 16 2016',
                 'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing',
                 'href' => '#',
-                'img' => 'img/trendy_watch/trendy_3.jpg',
-                'alt' => 'Image of Trendy Watch'
+                'img' => 'img/trend_watch/trend_3.jpg',
+                'alt' => 'Image of Trend Watch'
             )
         )
 
@@ -680,32 +680,32 @@ $config = array(
 
             array(
                 'heading' => 'Hair - Feb 2016',
-                'img' => 'img/press/trendy_1.jpg',
+                'img' => 'img/press/press_1.jpg',
                 'alt' => 'Image of Hair magazine cover Feburary in 2016'
             ),
             array(
                 'heading' => 'Pro Hair & Beauty - Feb 2016',
-                'img' => 'img/press/trendy_2.jpg',
+                'img' => 'img/press/press_2.jpg',
                 'alt' => 'Image of Pro Hair & Beauty magazine cover Feburary in 2016'
             ),
             array(
                 'heading' => 'Braids - Jan 2016',
-                'img' => 'img/press/trendy_3.jpg',
+                'img' => 'img/press/press_3.jpg',
                 'alt' => 'Image of Braids magazine cover Jan in 2016'
             ),
             array(
                 'heading' => 'Blonde Hair - Dec 2015',
-                'img' => 'img/press/trendy_4.jpg',
+                'img' => 'img/press/press_4.jpg',
                 'alt' => 'Image of Blonde Hair magazine cover December in 2015'
             ),
             array(
                 'heading' => 'Your Hair - Dec 2015',
-                'img' => 'img/press/trendy_5.jpg',
+                'img' => 'img/press/press_5.jpg',
                 'alt' => 'Image of Your Hair magazine cover December in 2015'
             ),
             array(
                 'heading' => 'Vogue - Nov 2015',
-                'img' => 'img/press/trendy_6.jpg',
+                'img' => 'img/press/press_6.jpg',
                 'alt' => 'Image of Vogue magazine cover November in 2015'
             )
 

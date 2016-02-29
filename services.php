@@ -8,8 +8,8 @@
             
             <div class="row">
 
-                <div class="span-5 columns">
-                    <ul class="section-services-nav-lists">
+                <div class="span-5 columns section-services-nav-lists">
+                    <ul>
                     <?php
                         $navListsHref = array();
                     ?>
@@ -23,7 +23,11 @@
                         </li>
 
                     <?php endforeach; ?>
+
                     </ul>
+
+                    <a href="./booking.php" class="section-services-cta btn">Schedule Now</a>
+
                 </div>
 
                 <div class="span-7 columns section-services-lists">
