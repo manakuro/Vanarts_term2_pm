@@ -1,0 +1,270 @@
+/* --------------------------
+        BASE
+----------------------------*/
+@import 'partials/_config.scss';
+@import 'partials/_base.scss';
+
+
+/* --------------------------
+        LAYOUT
+----------------------------*/
+
+/* Header */
+.page-header {
+
+    // Logo 
+    .logo {
+        margin: 30px 0 0 20px;
+
+    }
+
+    // Navigation
+    .nav {
+        background: $black;
+        margin-top: 20px;
+
+        li {
+            display: inline-block;
+
+            a {
+                display: block;
+                padding: 15px;
+                font-size: 2em;
+                font-weight: 300;
+                text-transform: uppercase;
+                color: $light-grey;
+
+                -webkit-transition: all .5s;
+                   -moz-transition: all .5s;
+                    -ms-transition: all .5s;
+                     -o-transition: all .5s;
+                        transition: all .5s;
+
+            }
+
+            a:hover {
+                background: $secondary;
+                color: $white;
+            }
+        }
+
+    }
+
+}
+
+/* Login */
+.section-login {
+    height: 100vh;
+
+
+
+}
+
+/* Gallery */
+.section-admin-gallery {
+
+    .gallery-new-wrapper {
+        text-align: right;
+
+        a {
+            display: block;
+            float: right;
+        }
+    }
+
+}
+
+
+/* Footer */
+.page-footer {
+    background: $black;
+    color: $white;
+    padding: 10px;
+
+    .page-footer-title {
+        font-size: 2em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .social {
+        li {
+            display: inline-block;
+            margin-right: 20px;
+
+            a {
+                color: $white;
+                font-size: 0;
+
+                .fa {
+                    font-size: 30px;
+                }
+
+            -webkit-transition: all .5s;
+               -moz-transition: all .5s;
+                -ms-transition: all .5s;
+                 -o-transition: all .5s;
+                    transition: all .5s;
+            }
+
+            a:hover {
+                color: $secondary;
+            }
+        }
+    }
+
+    .page-footer-nav {
+        li {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            a {
+                color: $white;
+                font-size: 1.5em;
+                text-transform: uppercase;
+
+            -webkit-transition: all .5s;
+               -moz-transition: all .5s;
+                -ms-transition: all .5s;
+                 -o-transition: all .5s;
+                    transition: all .5s;
+
+            }
+
+            a:hover {
+                color: $secondary;
+            }
+
+            &:after {
+                content: "";
+                width: 1px;
+                height: 80%;
+                background: $white;
+                display: inline-block;
+                position: absolute;
+                right: -10px;
+            }
+        }
+
+    }
+
+    .footer-cap {
+        font-size: 1.5em;
+        margin-top: 7px;
+    }
+
+}
+
+/* --------------------------
+        Modules
+----------------------------*/
+.error-msg {
+    margin: 60px auto;
+    font-size: 2em;
+    color: $error;
+    font-weight: 900;
+}
+
+.table {
+
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 60px;
+    border: 1px solid $light-grey;
+
+    .thead {
+
+        td {
+            font-weight: bold;
+            background-color: $black;
+            color: $white;
+            font-size: 2em;
+            text-transform: uppercase;
+            padding: 10px;
+            border-right: 1px solid $light-grey;
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+
+    }
+
+    .tbody {
+
+        .t-row:nth-child(2n+1) {
+            background-color: #ECEBEB;
+        }
+
+        .t-row {
+
+            &.clickable {
+                cursor: pointer;
+            }
+
+            td {
+                padding: 10px;
+                font-size: 1.5em;
+                border-right: 1px solid $light-grey;
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+
+            -webkit-transition: all .5s;
+               -moz-transition: all .5s;
+                -ms-transition: all .5s;
+                 -o-transition: all .5s;
+                    transition: all .5s;
+
+            &:hover {
+                background: $pink;
+            }
+
+        }
+
+        img {
+            width: 25%;
+        }
+
+    }
+
+}
+
+.pagination-wrapper-bottom {
+    margin-top: 60px;
+}
+
+.pagination {
+
+    .page-item {
+        display: inline-block;
+        border: 1px solid $light-grey;
+
+        &:first-child {
+            border-right: none;
+        }
+
+        a {
+            display: block;
+            padding: 10px 20px;
+            font-size: 2em;
+            color: $light-grey;
+        }
+
+
+        -webkit-transition: all .5s;
+           -moz-transition: all .5s;
+            -ms-transition: all .5s;
+             -o-transition: all .5s;
+                transition: all .5s;
+
+        &:hover {
+            background: $pink;
+        }
+
+    }
+
+}

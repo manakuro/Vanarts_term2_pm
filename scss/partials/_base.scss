@@ -103,6 +103,10 @@ textarea {
     margin-bottom: 80px;
 }
 
+.section-first {
+    margin-top: 80px;
+}
+
 .section-title {
     @include section-title(center);
 }

@@ -1,5 +1,6 @@
 <?php
 
+/* IN GENERAL, SHOULD AVOID USING GLOBAL VARIABLES LIKE THIS */
 $config = array(
 
     // Navigation
@@ -710,6 +711,33 @@ $config = array(
             )
 
         )
+
+    ),
+
+    // Admin
+    'admin' => array(
+
+        // Navigation
+        'nav' => array(
+
+            'gallery' => array(
+                'name' => 'gallery',
+                'href' => 'gallery.php'
+            ),
+            'trend_watch' => array(
+                'name' => 'trend watch',
+                'href' => 'trend_watch.php'
+            ),
+            'press' => array(
+                'name' => 'press',
+                'href' => 'press.php'
+            ),
+            'logout' => array(
+                'name' => 'logout',
+                'href' => 'logout.php'
+            ),
+
+        ),
 
     )
 
