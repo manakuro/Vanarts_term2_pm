@@ -17,6 +17,7 @@ $url  = empty($_SERVER["HTTPS"]) ? "http://" : "https://";
 $url .= $_SERVER["HTTP_HOST"];
 define('BASE_URL', $url);
 
+date_default_timezone_set ( 'Canada/Pacific' );
 
 // var_dump(
 //     $_SERVER['REQUEST_URI'], 

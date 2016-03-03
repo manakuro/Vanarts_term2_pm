@@ -26,7 +26,7 @@ include('bootstrap.php');
 
         <!-- CSS -->
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,100italic,100|Lato:400,300,300italic|Dancing+Script:400,700' rel='stylesheet' type='text/css'>  
-        <link rel="stylesheet" href="css/vendor/font-awesome.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/vendor/normalize.css">
         <link rel="stylesheet" href="css/main.min.css">
 

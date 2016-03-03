@@ -4,7 +4,10 @@
 
     $conn = connectDB();
     $paginationLimit = 5;
-    $table = 'dt_galleries';
+    $table = 'dt_press';
+    $currentPage = './press.php';
+    $editPage = './press_edit.php';
+    $deletePage = './press_delete.php';
 
     $query = "SELECT * FROM $table";
     $result = mysqli_query($conn, $query);
@@ -26,7 +29,7 @@
 
         $pagination .= '<ul class="pagination">';
         for ($i = 1; $i <= $numberOfpage; $i++) {
-            $pagination .= '<li class="page-item"><a class="input-page" name="page_number" href="./gallery.php?page_number='. $i .'">'. $i .'</a></li>';
+            $pagination .= '<li class="page-item"><a class="input-page" name="page_number" href="'. $currentPage .'?page_number='. $i .'">'. $i .'</a></li>';
         }
         $pagination .= '</ul>';
 
@@ -34,11 +37,15 @@
         $result = mysqli_query( $conn, $query );
         while ($row = mysqli_fetch_assoc($result)) {
 
-            $galleryHtml .= '<tr class="t-row clickable" data-href="./gallery_edit.php?id='. $row['id'] .'" data-row-id="'. $row['id'] .'">';
+            $galleryHtml .= '<tr class="t-row clickable" data-href="'. $editPage .'?id='. $row['id'] .'" data-row-id="'. $row['id'] .'">';
             foreach($row as $key => $val) {
 
                 if ($key === 'img') {
                     $val = '<img src="'. $val .'" />';
+                }
+
+                if ($key === "date") {
+                    $val = date('d F Y', strtotime($val));
                 }
 
                 if ($key === "updated_at" || $key === "created_at") {
@@ -49,7 +56,7 @@
             }
 
             // Delete button
-            $galleryHtml .= '<td class="prevent-click"><a class="del-btn btn" href="./gallery_delete.php">×</a></td>';
+            $galleryHtml .= '<td class="prevent-click"><a class="del-btn btn" href="'. $deletePage .'">×</a></td>';
 
             $galleryHtml .= '</tr>';
 
@@ -70,7 +77,7 @@
                 <div class="span-4 columns push-8">
 
                     <div class="gallery-new-wrapper">
-                        <a href="./gallery_edit.php" class="btn" name="submit" >New</a>
+                        <a href="<?php echo $editPage; ?>" class="btn" name="submit" >New</a>
                     </div>
                     
                 </div>
@@ -90,7 +97,7 @@
                         <thead class="thead">
                             <tr class="t-row">
                                 <td class="span-1">ID</td>
-                                <td class="span-2">Name</td>
+                                <td class="span-2">Title</td>
                                 <td class="span-5">Image</td>
                                 <td class="span-2">Description</td>
                                 <td class="span-1">Created Date</td>
