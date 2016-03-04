@@ -15,23 +15,23 @@
     if ($numberOfRows > 0) {
 
         // Display pagination
-        $numberOfpage = ceil($numberOfRows/$paginationLimit);
+        // $numberOfpage = ceil($numberOfRows/$paginationLimit);
 
-        if (isset($_GET['page_number'])) {
-            $start = ($_GET['page_number'] * $paginationLimit) - $paginationLimit;
-            $query = "SELECT * FROM $table LIMIT $start, $paginationLimit";
-        } else {
-            $query = "SELECT * FROM $table LIMIT 0, $paginationLimit";
-        }
+        // if (isset($_GET['page_number'])) {
+        //     $start = ($_GET['page_number'] * $paginationLimit) - $paginationLimit;
+        //     $query = "SELECT * FROM $table LIMIT $start, $paginationLimit";
+        // } else {
+        //     $query = "SELECT * FROM $table LIMIT 0, $paginationLimit";
+        // }
 
-        $pagination .= '<ul class="pagination">';
-        for ($i = 1; $i <= $numberOfpage; $i++) {
-            $pagination .= '<li class="page-item"><a class="input-page" name="page_number" href="'. $currentPage .'?page_number='. $i .'">'. $i .'</a></li>';
-        }
-        $pagination .= '</ul>';
+        // $pagination .= '<ul class="pagination">';
+        // for ($i = 1; $i <= $numberOfpage; $i++) {
+        //     $pagination .= '<li class="page-item"><a class="input-page" name="page_number" href="'. $currentPage .'?page_number='. $i .'">'. $i .'</a></li>';
+        // }
+        // $pagination .= '</ul>';
 
         // Diplay table
-        $result = mysqli_query( $conn, $query );
+        // $result = mysqli_query( $conn, $query );
         while ($row = mysqli_fetch_assoc($result)) {
 
             $listHtml .= '

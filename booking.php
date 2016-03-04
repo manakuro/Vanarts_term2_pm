@@ -6,16 +6,14 @@
 
         <form id="contact-form" name="contact_form" method="post" action="booking.php">
 
-            <section class="section section-booking-contact">
+            <section class="section section-booking">
                 
-                <div class="row row-center">
-
-                    <div class="span-7 columns">
-                        <h4 class="section-booking-title">Contact</h4>
-                    </div>
+                <div class="row">
 
                     <div class="span-6 columns">
                         
+                        <h4 class="section-booking-title">Contact</h4>
+
                         <ul>
                             <li>
                                 <div class="input-wrapper">
@@ -39,22 +37,6 @@
                             </li>
 
                         </ul>
-
-                    </div>
-
-                </div>
-
-            </section><!-- end of section-booking-contact -->
-
-            <section class="section section-booking-service">
-                
-                <div class="row row-center">
-
-                    <div class="span-7 columns">
-                        <h4 class="section-booking-title">Services</h4>
-                    </div>
-
-                    <div class="span-6 columns">
                         
                         <ul class="form-lists">
                             <li>
@@ -85,8 +67,8 @@
                                     <span class="label-span">Staff Preference</span>
 
                                     <select name="staff-preference" class="input-select input">
-                                    <?php foreach($config['booking']['staff_preferences'] as $val): ?>
-                                        <option value="<?php echo $val['val']; ?>"><?php echo $val['text']; ?></option>
+                                    <?php foreach($config['about']['stylists'] as $val): ?>
+                                        <option value="<?php echo $val['name']; ?>"><?php echo $val['name']; ?></option>
                                     <?php endforeach; ?>
                                     </select>
 
@@ -126,7 +108,7 @@
                             </li>
 
                             <li>
-                                <div class="input-wrapper input-wrapper-btn">
+                                <div class="input-wrapper">
                                     <input type="submit" class="btn" name="submit">
                                 </div>                              
                             </li>
@@ -135,9 +117,26 @@
 
                     </div>
 
+                    <div class="span-6 columns">
+
+                    <div class="span-12 columns">
+                        <h3 class="section-booking-title">Stylists</h3>
+                    </div>
+
+                    <?php foreach($config['about']['stylists'] as $val): ?>
+                        <div class="span-4 columns section-booking-stylists-li">
+                            <img src="<?php echo $val['img']; ?>" alt="<?php echo $val['alt']; ?>">
+                            <p class="section-booking-stylists-title"><?php echo $val['name']?></p>
+                            <p class="section-booking-stylists-desc"><?php echo $val['desc']?></p>
+                        </div>
+                    <?php endforeach; ?>
+
+
+                    </div>
+
                 </div>
 
-            </section><!-- end of section-booking-service -->
+            </section><!-- end of section-booking-contact -->
 
         </form>
 

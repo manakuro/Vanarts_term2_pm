@@ -9,16 +9,33 @@
     
     .section-trend-watch-li {
         margin-bottom: 30px;
+        padding-top: 30px;
+
+        -webkit-transition: all .5s;
+           -moz-transition: all .5s;
+            -ms-transition: all .5s;
+             -o-transition: all .5s;
+                transition: all .5s;
+
+        &:hover {
+            opacity: .7;
+        }
 
         .section-trend-watch-desc-inner {
-            background: $black;
+            background: $black-transparent;
             color: $light-grey;
             text-align: center;
             padding: 15px;
 
+            position: absolute;
+            bottom: 0;
+            width: 92%;
+
             .section-trend-watch-title {
                 font-size: 2.5em;
                 margin-bottom: 10px;
+                color: $secondary;
+                font-family: $font-heading;
             }
 
             .section-trend-watch-date {

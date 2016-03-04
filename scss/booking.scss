@@ -1,6 +1,27 @@
-.section-booking-title {
-    font-size: 4em;
-    font-family: Dancing Script;
-    text-align: left;
-    box-shadow: inset 0 -1px $light-grey;
+.section-booking {
+
+    .section-booking-title {
+        font-size: 4em;
+        font-family: Dancing Script;
+        text-align: left;
+        box-shadow: inset 0 -1px $light-grey;
+        color: $secondary;
+    }
+
+
+    .section-booking-stylists-li {
+        margin-top: 30px;
+
+        .section-booking-stylists-title {
+            font-size: 2em;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        .section-booking-stylists-desc {
+            font-size: 1.5em;
+        }
+
+    }
+
 }

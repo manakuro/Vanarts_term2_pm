@@ -107,11 +107,10 @@ $(function(){
             // autoResize: true,
             itemWidth: "20%",
             // fillEmptySpace: true
-            flexibleWidth: "20%",
+            flexibleWidth: "25%",
             // offset: 5,
             // verticalOffset: 4
         });
-
 
     }
 

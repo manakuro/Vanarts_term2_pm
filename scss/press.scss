@@ -3,11 +3,15 @@
     .section-press-li {
         margin-bottom: 30px;
         
+        img {
+            box-shadow: 5px 5px 8px $light-grey;
+        }
 
         .section-press-li-heading {
             font-size: 3em;
             margin-bottom: 10px;
             font-weight: 500;
+            color: $secondary;
         }
 
         .section-press-li-divider {

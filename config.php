@@ -72,14 +72,17 @@ $config = array(
         array(
             'style' => 'background-image: url(img/hero/hero-img-1.jpg);'
         ),
-        array(
-            'style' => 'background-image: url(img/hero/hero-img-2.jpg);'
-        ),
+        // array(
+        //     'style' => 'background-image: url(img/hero/hero-img-2.jpg);'
+        // ),
         array(
             'style' => 'background-image: url(img/hero/hero-img-3.jpg);'
         ),
         array(
             'style' => 'background-image: url(img/hero/hero-img-4.jpg);'
+        ),
+        array(
+            'style' => 'background-image: url(img/hero/hero-img-5.jpg);'
         )
 
     ),
@@ -176,52 +179,52 @@ $config = array(
                 'href' => '#'
             ),
             array(
-                'name' => 'Patrick',
+                'name' => 'Emma',
                 'desc' => 'Senior Stylist',
                 'img' => 'img/stylists/stylists_2.jpg',
                 'alt' => 'Image of Yoshi\'s Stylist Patrick',
                 'href' => '#'
             ),
             array(
-                'name' => 'Patrick',
-                'desc' => 'Master Stylist',
+                'name' => 'Audrey',
+                'desc' => 'Senior Stylist',
                 'img' => 'img/stylists/stylists_3.jpg',
                 'alt' => 'Image of Yoshi\'s Stylist Patrick',
                 'href' => '#'
             ),
             array(
-                'name' => 'Patrick',
-                'desc' => 'Master Stylist',
+                'name' => 'Asher',
+                'desc' => 'Senior Stylist',
                 'img' => 'img/stylists/stylists_4.jpg',
                 'alt' => 'Image of Yoshi\'s Stylist Patrick',
                 'href' => '#'
             ),
 
             array(
-                'name' => 'Patrick',
-                'desc' => 'Master Stylist',
-                'img' => 'img/stylists/stylists_1.jpg',
-                'alt' => 'Image of Yoshi\'s Stylist Patrick',
-                'href' => '#'
-            ),
-            array(
-                'name' => 'Patrick',
+                'name' => 'Savannah',
                 'desc' => 'Senior Stylist',
-                'img' => 'img/stylists/stylists_2.jpg',
+                'img' => 'img/stylists/stylists_5.jpg',
                 'alt' => 'Image of Yoshi\'s Stylist Patrick',
                 'href' => '#'
             ),
             array(
-                'name' => 'Patrick',
-                'desc' => 'Master Stylist',
-                'img' => 'img/stylists/stylists_3.jpg',
+                'name' => 'Ezra',
+                'desc' => 'Senior Stylist',
+                'img' => 'img/stylists/stylists_6.jpg',
                 'alt' => 'Image of Yoshi\'s Stylist Patrick',
                 'href' => '#'
             ),
             array(
-                'name' => 'Patrick',
-                'desc' => 'Master Stylist',
-                'img' => 'img/stylists/stylists_4.jpg',
+                'name' => 'Victoria',
+                'desc' => 'Stylist',
+                'img' => 'img/stylists/stylists_7.jpg',
+                'alt' => 'Image of Yoshi\'s Stylist Patrick',
+                'href' => '#'
+            ),
+            array(
+                'name' => 'Sarah',
+                'desc' => 'Stylist',
+                'img' => 'img/stylists/stylists_8.jpg',
                 'alt' => 'Image of Yoshi\'s Stylist Patrick',
                 'href' => '#'
             ),
@@ -527,24 +530,18 @@ $config = array(
                 'title' => 'Treatments',
                 'items' => array(
                     array(
-                        'text' => 'Full Perm 70 - 90'
+                        'text' => 'Dry or Damage Treatment 100'
                     ),
                     array(
-                        'text' => 'Partial Perm 65 - 75'
+                        'text' => 'Hair and Scalp Treatment 70 - 100'
                     ),
                     array(
-                        'text' => 'Long Hair Wavy 90 - 120'
-                    ),
-                    array(
-                        'text' => 'Long Hair Spiral 110 - 140'
-                    ),
-                    array(
-                        'text' => '﻿Chemical Straight 80 - 110'
+                        'text' => 'Aldehyde & Formaldehyde free keratin treatment 200 - 350'
                     )
                 ),
 
-                'img' => 'img/services/perm.jpg',
-                'alt' => 'Image of Perm Cut Model',
+                'img' => 'img/services/treatment.jpg',
+                'alt' => 'Image of Treatment Cut Model',
 
             ),
 
@@ -552,49 +549,34 @@ $config = array(
                 'title' => 'Make Up',
                 'items' => array(
                     array(
-                        'text' => 'Full Perm 70 - 90'
+                        'text' => 'Makeup Application 55'
                     ),
                     array(
-                        'text' => 'Partial Perm 65 - 75'
-                    ),
-                    array(
-                        'text' => 'Long Hair Wavy 90 - 120'
-                    ),
-                    array(
-                        'text' => 'Long Hair Spiral 110 - 140'
-                    ),
-                    array(
-                        'text' => '﻿Chemical Straight 80 - 110'
+                        'text' => 'Makeup Application & Lesson 65'
                     )
                 ),
 
-                'img' => 'img/services/perm.jpg',
-                'alt' => 'Image of Perm Cut Model',
+                'img' => 'img/services/makeup.jpg',
+                'alt' => 'Image of Makeup Cut Model',
 
             ),
 
             array(
-                'title' => 'Extensions / Smoothig',
+                'title' => 'Extensions / Smoothing',
                 'items' => array(
                     array(
-                        'text' => 'Full Perm 70 - 90'
+                        'text' => 'Human Hair Extensions  Price on Consultation'
                     ),
                     array(
-                        'text' => 'Partial Perm 65 - 75'
+                        'text' => 'Individual I-Tip Copper Bond Application per Bundle 250'
                     ),
                     array(
-                        'text' => 'Long Hair Wavy 90 - 120'
-                    ),
-                    array(
-                        'text' => 'Long Hair Spiral 110 - 140'
-                    ),
-                    array(
-                        'text' => '﻿Chemical Straight 80 - 110'
+                        'text' => 'Skin Weft / Tape Method by Consultation'
                     )
                 ),
 
-                'img' => 'img/services/perm.jpg',
-                'alt' => 'Image of Perm Cut Model',
+                'img' => 'img/services/extension.jpg',
+                'alt' => 'Image of Extensions Cut Model',
 
             ),
 

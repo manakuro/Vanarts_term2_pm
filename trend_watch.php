@@ -6,7 +6,7 @@
     $table = 'dt_trend';
     $currentPage = $_SERVER['PHP_SELF'];
 
-    $query = "SELECT * FROM $table";
+    $query = "SELECT * FROM $table order by id desc";
     $result = mysqli_query($conn, $query);
     $numberOfRows = mysqli_num_rows($result);
 
@@ -14,21 +14,21 @@
     $pagination = '';
     if ($numberOfRows > 0) {
 
-        // Display pagination
-        $numberOfpage = ceil($numberOfRows/$paginationLimit);
+        // // Display pagination
+        // $numberOfpage = ceil($numberOfRows/$paginationLimit);
 
-        if (isset($_GET['page_number'])) {
-            $start = ($_GET['page_number'] * $paginationLimit) - $paginationLimit;
-            $query = "SELECT * FROM $table LIMIT $start, $paginationLimit";
-        } else {
-            $query = "SELECT * FROM $table LIMIT 0, $paginationLimit";
-        }
+        // if (isset($_GET['page_number'])) {
+        //     $start = ($_GET['page_number'] * $paginationLimit) - $paginationLimit;
+        //     $query = "SELECT * FROM $table LIMIT $start, $paginationLimit";
+        // } else {
+        //     $query = "SELECT * FROM $table LIMIT 0, $paginationLimit";
+        // }
 
-        $pagination .= '<ul class="pagination">';
-        for ($i = 1; $i <= $numberOfpage; $i++) {
-            $pagination .= '<li class="page-item"><a class="input-page" name="page_number" href="'. $currentPage .'?page_number='. $i .'">'. $i .'</a></li>';
-        }
-        $pagination .= '</ul>';
+        // $pagination .= '<ul class="pagination">';
+        // for ($i = 1; $i <= $numberOfpage; $i++) {
+        //     $pagination .= '<li class="page-item"><a class="input-page" name="page_number" href="'. $currentPage .'?page_number='. $i .'">'. $i .'</a></li>';
+        // }
+        // $pagination .= '</ul>';
 
         // Diplay table
         $result = mysqli_query( $conn, $query );
@@ -60,7 +60,10 @@
         <section class="section section-trend-watch">
             
             <div class="section-trend-watch-container">
-            <?php echo $listHtml; ?>
+            <!-- <div class="row"> -->
+                <?php echo $listHtml; ?>
+            <!-- </div> -->
+            
             </div>
 
         </section><!-- end of section-services -->

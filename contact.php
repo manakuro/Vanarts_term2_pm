@@ -9,16 +9,6 @@
             <section class="section section-contact">
 
                 <div class="row">
-                    
-                    <div class="span-12 columns">
-                        
-                        <div class="google-map">
-
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2188.5861175186856!2d-123.11540626200372!3d49.28241914062574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1svanarts!5e0!3m2!1sen!2sca!4v1443818353934" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-                        </div>
-
-                    </div>
 
                     <div class="span-6 columns">
                         
@@ -90,6 +80,16 @@
                             <h5 class="section-contact-li-heading">Hours</h5>
                             <p class="section-contact-li-desc">Monday - Saturday 8 am - 9 pm</p>
                             <p class="section-contact-li-desc">Sunday 10 am - 6 pm</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="span-12 columns">
+                        
+                        <div class="google-map">
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2188.5861175186856!2d-123.11540626200372!3d49.28241914062574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1svanarts!5e0!3m2!1sen!2sca!4v1443818353934" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 
                         </div>
 
